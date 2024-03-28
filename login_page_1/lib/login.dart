@@ -17,9 +17,25 @@ class Screenlogin extends StatelessWidget {
           Container(
               alignment: Alignment.topCenter,
               child: Image.asset('assests/images/light-2.png')),
-          Container(
-            padding:EdgeInsets.symmetric(horizontal: 120.0)
-            child: Image.asset('assests/images/clock.png'),
+          Padding(
+            padding: EdgeInsets.only(left: 300, top: 95),
+            child: Container(
+              child: Image.asset('assests/images/clock.png'),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 200),
+            child: Center(
+              child: Container(
+                  child: Text(
+                'Logiin',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: AutofillHints.birthdayDay,
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold),
+              )),
+            ),
           )
         ],
       )),
